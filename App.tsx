@@ -10,6 +10,7 @@ import RootNavigation from './src/navigation/RootNavigation';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import StatusBarApp from './src/shared/components/StatusBarApp';
 import { StyleSheet } from 'react-native';
+import './global.css';
 
 function App(): React.JSX.Element {
   return (
