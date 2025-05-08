@@ -1,21 +1,27 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Text, View } from 'react-native';
+import { createNativeBottomTabNavigator } from '@bottom-tabs/react-navigation';
+import ExploreScreen from '../screens/Explore.screen';
+import ProfileScreen from '../screens/Profile.screen';
 
-const HomeScreen = () => {
-    return (
-        <View>
-            <Text>Home Screen</Text>
-        </View>
-    );
-};
-
-const Stack = createNativeStackNavigator();
+const Tab = createNativeBottomTabNavigator();
 
 const RootStack = () => {
     return (
-        <Stack.Navigator screenOptions={{ headerShown: false, contentStyle: { backgroundColor: '#F8F8F8' } }}>
-            <Stack.Screen name="Home" component={HomeScreen} />
-        </Stack.Navigator>
+        <Tab.Navigator>
+            <Tab.Screen
+                name="Explore"
+                component={ExploreScreen}
+                options={{
+                    tabBarIcon: () => ({ sfSymbol: 'chart.bar' }),
+                }}
+            />
+            <Tab.Screen
+                name="Profile"
+                component={ProfileScreen}
+                options={{
+                    tabBarIcon: () => ({ sfSymbol: 'person' }),
+                }}
+            />
+        </Tab.Navigator>
     );
 };
 

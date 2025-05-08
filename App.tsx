@@ -7,17 +7,19 @@
 
 import React, { Fragment } from 'react';
 import RootNavigation from './src/navigation/RootNavigation';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { StyleSheet } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import StatusBarApp from './src/shared/components/StatusBarApp';
+import { StyleSheet } from 'react-native';
 
 function App(): React.JSX.Element {
   return (
     <Fragment>
       <StatusBarApp />
-      <SafeAreaView style={styles.container}>
-        <RootNavigation />
-      </SafeAreaView>
+      <SafeAreaProvider>
+        <SafeAreaView style={styles.container} edges={['top']}>
+          <RootNavigation />
+        </SafeAreaView>
+      </SafeAreaProvider>
     </Fragment>
   );
 }
@@ -25,8 +27,8 @@ function App(): React.JSX.Element {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F8F8F8',
   },
 });
+
 
 export default App;
