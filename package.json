@@ -1,5 +1,5 @@
 {
-  "name": "CryptoExchangeApp",
+  "name": "cryptoexchange",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,21 +7,31 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "xcode": "xed -b ios",
+    "compile": "tsc --noEmit"
   },
   "dependencies": {
     "@bottom-tabs/react-navigation": "^0.9.1",
     "@react-navigation/elements": "^2.4.1",
     "@react-navigation/native": "^7.1.8",
     "@react-navigation/native-stack": "^7.3.12",
+    "axios": "^1.9.0",
     "nativewind": "^4.1.23",
     "react": "19.0.0",
     "react-native": "0.79.2",
+    "react-native-bootsplash": "^6.3.8",
     "react-native-bottom-tabs": "^0.9.1",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-haptic-feedback": "^2.3.3",
+    "react-native-linear-gradient": "^2.8.3",
     "react-native-reanimated": "^3.17.5",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-screens": "^4.10.0",
-    "tailwindcss": "^3.4.17"
+    "react-native-svg": "^15.11.2",
+    "react-native-wagmi-charts": "^2.6.0",
+    "tailwindcss": "^3.4.17",
+    "zustand": "^5.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -41,7 +51,9 @@
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
+    "react-native-svg-transformer": "^1.5.1",
     "react-test-renderer": "19.0.0",
+    "reactotron-react-native": "^5.1.13",
     "typescript": "^5.8.3"
   },
   "engines": {

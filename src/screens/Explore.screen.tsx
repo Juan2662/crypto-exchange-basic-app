@@ -1,9 +1,12 @@
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import ExploreHeaderComponent from '../components/ExploreHeader';
+import CryptoListComponent from '../components/CryptoList';
 
 const ExploreScreen = () => {
     return (
         <View>
-            <Text>Explore Screen</Text>
+            <ExploreHeaderComponent />
+            <CryptoListComponent />
         </View>
     );
 };

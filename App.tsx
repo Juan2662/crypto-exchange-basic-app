@@ -10,17 +10,24 @@ import RootNavigation from './src/navigation/RootNavigation';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import StatusBarApp from './src/shared/components/StatusBarApp';
 import { StyleSheet } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
 import './global.css';
+if (__DEV__) {
+  require('./ReactotronConfig');
+}
 
 function App(): React.JSX.Element {
   return (
     <Fragment>
       <StatusBarApp />
-      <SafeAreaProvider>
-        <SafeAreaView style={styles.container} edges={['top']}>
-          <RootNavigation />
-        </SafeAreaView>
-      </SafeAreaProvider>
+      <GestureHandlerRootView>
+        <SafeAreaProvider>
+          <SafeAreaView style={styles.container} edges={['top']}>
+            <RootNavigation />
+          </SafeAreaView>
+        </SafeAreaProvider>
+      </GestureHandlerRootView>
     </Fragment>
   );
 }

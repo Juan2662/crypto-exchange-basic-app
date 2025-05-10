@@ -1,27 +1,25 @@
-import { createNativeBottomTabNavigator } from '@bottom-tabs/react-navigation';
-import ExploreScreen from '../screens/Explore.screen';
-import ProfileScreen from '../screens/Profile.screen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import TabNavigator from './TabNavigator';
+import CoinDetailsScreen from '../screens/CoinDetails.screen';
+import { RootStackParamList } from './types';
 
-const Tab = createNativeBottomTabNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const RootStack = () => {
     return (
-        <Tab.Navigator>
-            <Tab.Screen
-                name="Explore"
-                component={ExploreScreen}
-                options={{
-                    tabBarIcon: () => ({ sfSymbol: 'chart.bar' }),
-                }}
+        <Stack.Navigator screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: 'white' },
+        }}>
+            <Stack.Screen
+                name="Main"
+                component={TabNavigator}
             />
-            <Tab.Screen
-                name="Profile"
-                component={ProfileScreen}
-                options={{
-                    tabBarIcon: () => ({ sfSymbol: 'person' }),
-                }}
+            <Stack.Screen
+                name="CoinDetails"
+                component={CoinDetailsScreen}
             />
-        </Tab.Navigator>
+        </Stack.Navigator>
     );
 };
 

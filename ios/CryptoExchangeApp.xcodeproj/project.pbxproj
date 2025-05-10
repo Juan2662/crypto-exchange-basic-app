@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		1371485AC184C73E89F7EF82 /* Pods_CryptoExchangeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6017B4036F3DC675BE8944 /* Pods_CryptoExchangeApp.framework */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		3DB75733CB8442D19EF39C76 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 331544108F414F4CBD24F8E6 /* BootSplash.storyboard */; };
 		69EC129A61E4F7AE7996AD5A /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A17E0AE0B180472AA84DB620 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3D837E49CF453296F8DE67 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CryptoExchangeApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CryptoExchangeApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = CryptoExchangeApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		331544108F414F4CBD24F8E6 /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = CryptoExchangeApp/BootSplash.storyboard; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-CryptoExchangeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoExchangeApp.debug.xcconfig"; path = "Target Support Files/Pods-CryptoExchangeApp/Pods-CryptoExchangeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-CryptoExchangeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoExchangeApp.release.xcconfig"; path = "Target Support Files/Pods-CryptoExchangeApp/Pods-CryptoExchangeApp.release.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CryptoExchangeApp/AppDelegate.swift; sourceTree = "<group>"; };
+		7E3D837E49CF453296F8DE67 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = CryptoExchangeApp/Colors.xcassets; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CryptoExchangeApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FF6017B4036F3DC675BE8944 /* Pods_CryptoExchangeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoExchangeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +51,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				331544108F414F4CBD24F8E6 /* BootSplash.storyboard */,
+				7E3D837E49CF453296F8DE67 /* Colors.xcassets */,
 			);
 			name = CryptoExchangeApp;
 			sourceTree = "<group>";
@@ -161,6 +167,8 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				69EC129A61E4F7AE7996AD5A /* PrivacyInfo.xcprivacy in Resources */,
+				3DB75733CB8442D19EF39C76 /* BootSplash.storyboard in Resources */,
+				A17E0AE0B180472AA84DB620 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
