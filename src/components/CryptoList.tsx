@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { ActivityIndicator, FlatList, Text, TouchableOpacity, View } from 'react-native';
-import useCryptoStore from '../store/useCryptoStore';
+import useCryptoStore from '@store/useCryptoStore';
 import { useBottomTabBarHeight } from 'react-native-bottom-tabs';
 import CoinItem from './CoinItem';
 

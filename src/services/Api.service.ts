@@ -1,4 +1,5 @@
 import axios, { AxiosError } from 'axios';
+import config from '@config';
 
 import type {
   GetAllCoinsResponse,
@@ -6,8 +7,7 @@ import type {
   GetCoinDetailsResponse,
   GetAllCoinsArguments,
 } from './types';
-import config from '../config';
-import { ApiServiceResponse } from '../utils/helpers';
+import type { ApiServiceResponse } from '@utils/helpers';
 
 class ApiService {
   constructor(

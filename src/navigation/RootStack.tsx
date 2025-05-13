@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabNavigator from './TabNavigator';
-import CoinDetailsScreen from '../screens/CoinDetails.screen';
-import { RootStackParamList } from './types';
+import CoinDetailsScreen from '@screens/CoinDetails.screen';
+import type { RootStackParamList } from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 

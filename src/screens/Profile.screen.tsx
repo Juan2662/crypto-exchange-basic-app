@@ -1,22 +1,9 @@
-import { Alert, Image, Linking, Pressable, Text, View } from 'react-native';
-import config from '../config';
+import { Image, Pressable, Text, View } from 'react-native';
+import config from '@config';
+import { openUrl } from '@utils/helpers';
 
 const ProfileScreen = () => {
-    const handlePressGitHub = () => {
-        Linking.canOpenURL(config.githubProfileUrl)
-            .then((supported) => {
-                if (supported) {
-                    Linking.openURL(config.githubProfileUrl);
-                }
-            })
-            .catch(() => {
-                Alert.alert(
-                    'Error',
-                    'Unable to open GitHub profile. Please try again later.',
-                    [{ text: 'OK' }]
-                );
-            });
-    };
+    const handlePressGitHub = () => openUrl(config.githubProfileUrl);
     return (
         <View className="flex-1 bg-slate-50 dark:bg-slate-900">
             <View className="flex-1 items-center justify-center p-6">

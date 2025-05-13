@@ -1,8 +1,8 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native';
-import { formatter, getCoinImgUrl } from '../utils/helpers';
+import { formatter, getCoinImgUrl } from '@utils/helpers';
 import { useNavigation } from '@react-navigation/native';
-import type { CoinsData } from '../store/types';
-import type { ScreenNavigationProp } from '../navigation/types';
+import type { CoinsData } from '@store/types';
+import type { ScreenNavigationProp } from '@navigation/types';
 
 const CoinItem: React.FC<CoinsData> = (item) => {
     const { name, nameid,symbol, price_usd, percent_change_24h } = item;

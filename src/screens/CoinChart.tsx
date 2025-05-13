@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
 import { ActivityIndicator, Dimensions, Text, TouchableOpacity, View } from 'react-native';
-import ApiService from '../services/Api.service';
+import ApiService from '@services/Api.service';
 import { LineChart } from 'react-native-wagmi-charts';
 
-import type { CoinsData } from '../store/types';
+import type { CoinsData } from '@store/types';
 
 const { height, width } = Dimensions.get('window');
 const chartHeight = height * 0.25;

@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef } from 'react';
 import { Pressable, TextInput, View } from 'react-native';
-import { CloseIcon } from '../../assets/icons';
+import { CloseIcon } from '@assets/icons';
 
 type SearchInputProps = {
     onPressClose?: () => void;

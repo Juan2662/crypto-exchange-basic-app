@@ -1,9 +1,9 @@
 import { Dimensions, Keyboard, Pressable, Text, TextInput, View } from 'react-native';
-import SearchInput from '../components/SearchInput';
+import SearchInput from '@components/SearchInput';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { useCallback, useRef } from 'react';
-import { SearchIcon } from '../../assets/icons';
-import useCryptoStore from '../store/useCryptoStore';
+import { SearchIcon } from '@assets/icons';
+import useCryptoStore from '@store/useCryptoStore';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 

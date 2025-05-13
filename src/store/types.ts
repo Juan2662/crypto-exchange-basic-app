@@ -1,5 +1,5 @@
-import { GetAllCoinsArguments, GetAllCoinsResponse } from '../services/types';
-import { ApiServiceResponse } from '../utils/helpers';
+import { GetAllCoinsArguments, GetAllCoinsResponse } from '@services/types';
+import type { ApiServiceResponse } from '@utils/helpers';
 
 export type CryptoActions = {
   getCryptoList: (_: GetAllCoinsArguments, loadMore?: boolean) => Promise<ApiServiceResponse<GetAllCoinsResponse>>;

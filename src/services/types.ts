@@ -1,4 +1,4 @@
-import { CoinDetails, CoinsData } from '../store/types';
+import { CoinDetails, CoinsData } from '@store/types';
 
 export interface CoinsInfo {
   coins_num: number;

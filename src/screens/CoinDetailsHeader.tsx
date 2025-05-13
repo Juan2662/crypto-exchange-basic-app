@@ -1,5 +1,5 @@
 import { Pressable, Text, View } from 'react-native';
-import { ArrowLeftIcon } from '../../assets/icons';
+import { ArrowLeftIcon } from '@assets/icons';
 import { useNavigation } from '@react-navigation/native';
 
 const CoinDetailsHeader = () => {

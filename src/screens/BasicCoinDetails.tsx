@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native';
-import formatter from '../utils/formatter';
-import { CoinsData } from '../store/types';
-import { getPriceChangeColor } from '../utils/helpers';
+import formatter from '@utils/formatter';
+import { CoinsData } from '@store/types';
+import { getPriceChangeColor } from '@utils/helpers';
 
 const MarketItem: React.FC<{ label: string, value: string }> = ({ label, value }) => (
     <View className="flex-row justify-between mb-2">

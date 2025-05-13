@@ -1,10 +1,10 @@
 import { useRoute } from '@react-navigation/native';
 import { Image, ScrollView, Text, View } from 'react-native';
-import { formatter, getCoinImgUrl, getPriceChangeColor } from '../utils/helpers';
+import { formatter, getCoinImgUrl, getPriceChangeColor } from '@utils/helpers';
 import BasicCoinDetails from './BasicCoinDetails';
 import CoinChart from './CoinChart';
 import CoinDetailsHeader from './CoinDetailsHeader';
-import type { ScreenRouteProp } from '../navigation/types';
+import type { ScreenRouteProp } from '@navigation/types';
 
 const CoinDetailsScreen = () => {
     const { params: coinData } = useRoute<ScreenRouteProp<'CoinDetails'>>();

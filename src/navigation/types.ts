@@ -1,6 +1,6 @@
-import { RouteProp } from '@react-navigation/native';
-import type { CoinsData } from '../store/types';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import type { RouteProp } from '@react-navigation/native';
+import type { CoinsData } from '@store/types';
+import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type RootStackParamList = {
     Main: undefined;

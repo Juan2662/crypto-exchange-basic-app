@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { CryptoStorage } from './types';
-import ApiService from '../services/Api.service';
-import { GetAllCoinsArguments } from '../services/types';
+import ApiService from '@services/Api.service';
+import type { GetAllCoinsArguments } from '@services/types';
 
 const useCryptoStore = create<CryptoStorage>((set, get) => ({
     data: undefined,

@@ -1,6 +1,6 @@
 import { createNativeBottomTabNavigator } from '@bottom-tabs/react-navigation';
-import ExploreScreen from '../screens/Explore.screen';
-import ProfileScreen from '../screens/Profile.screen';
+import ExploreScreen from '@screens/Explore.screen';
+import ProfileScreen from '@screens/Profile.screen';
 const Tab = createNativeBottomTabNavigator();
 
 const TabNavigator = () => {
